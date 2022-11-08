@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Noto+Sans+Tamil:wght@100&family=Poppins:ital,wght@0,200;0,300;1,300&family=Staatliches&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+body{
+    background-color: rgb(58, 84, 114);
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    margin: 2% 0 5% 0;
+    color: rgb(0, 0, 0);
+}
+
+h2{
+    margin-bottom: 2%;
+}
+
+.formulario__submit{
+    margin-top: 4%;
+}
+
+p{
+    color: rgb(0, 0, 0);
+    margin-top: 20%;
+    text-align: center;
+}
+
+button:hover{
+    background-color: rgb(255, 0, 0);
+    transition: all 500ms ease-out;
+}
+
+.alta{
+    grid-area: alta;
+    height: 10vh;
+ 
+   
+}
+.baja{
+    grid-area: pagos;
+   
+
+}
+.panel{
+    grid-area: panel;
+    height: 70vh;
+    width: 50vw;
+    position: relative;
+    top: -45px; left: 15%;
+   
+   
+   
+ 
+}
+.usuario{
+    grid-area: usuario;
+    height: 10vh;
+   
+  
+  
+}
+.buscar{
+    grid-area: buscar;
+    height: 40px;
+
+    height: 10vh;
+ 
+  
+
+   
+  
+  }
+
+.pagos{
+    height: 40px;
+   
+    height: 10vh;
+  
+}
+
+
+main{
+    display: grid;
+    grid-template-areas: 
+"usuario  buscar panel "     
+"alta pago panel"         
+;
+
+  
+}
+
+
+.color{
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+    margin: 5%;
+}
+
+form{
+   display: flex;
+   flex-direction: column;
+}
+
+input{
+    text-align: center;
+    padding: 1%;
+  
+    
+}
+
+.fijar{
+    margin-top: -135px;
+}
+
+
+
+table{
+   width: 100%;
+   
+}
