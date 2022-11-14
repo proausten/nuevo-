@@ -50,11 +50,10 @@ button:hover{
 }
 .panel{
     grid-area: panel;
-    height: 70vh;
+    height: 80vh;
     width: 50vw;
     position: relative;
-    top: -45px; left: 15%;
-   
+    top: -45px; left: 15%;   
    
    
  
@@ -125,4 +124,23 @@ input{
 table{
    width: 100%;
    
+}
+
+.cliente__Info{
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 90%;
+   
+}
+
+a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_1{
+    margin-bottom: 1%;
+
 }

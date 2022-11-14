@@ -40,7 +40,17 @@ function recorrerProducto(){
 
 
 
+const clienteBusqueda = document.querySelector('tr')
 
 
 
 
+
+const retornoCliente = ({ nombre, apellido }) =>{
+    return ` <tr>
+    <td>${nombre}</td>
+    <td>${apellido}</td>
+</tr>`
+}
+
+ 

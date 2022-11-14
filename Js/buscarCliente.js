@@ -6,19 +6,22 @@ btCliente.addEventListener('click',(e) =>{
 
 function buscarCliente() {
     let buscar = prompt("Ingresa el Apellido del Cliente:")
-    //debugger
-    //let resultado = productos.find(elemento => elemento.nombre === buscar)
+
     let resultado = Clientes.find(elemento => elemento.apellido.includes(buscar))
-        if (resultado === undefined) {
-            console.warn("No se encontró el cliente")
-        } else {
-            console.log(resultado)
-        }
+       resultado===undefined ? console.log ("No se encontro Usuario"): console.log (resultado) 
 }
 
 function quitarCliente() {
     
     let clienteAquitar = prompt("Ingresa el Cliente a quitar de la lista:")
-      let posicion = cliente.indexOf(clienteAquitar)
-      console.log(posicion)
+    debugger
+      let posicion = Clientes.indexOf(clienteAquitar)
+      if (posicion > -1 ){
+         let clienteQuitado =Clientes.splice(posicion, 1)
+         console.log(clienteQuitado)
+           
+      }
+    
         }    
+
+

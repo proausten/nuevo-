@@ -5,13 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="./Js/dom.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script defer src="./Js/clientes.js"></script>
     <script defer src="./Js/buscarCliente.js"></script>
-    <link rel="stylesheet" href="./styles/styles.css">
+    <script defer src="./Js/dom.js"></script>
+    <script src="./Js/app.js"></script>
+    <link rel=" stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./formulario.html">
     <title>Primera Entrega Proyecto Js</title>
 </head>
+
 
 <body>
     <header>
@@ -24,23 +29,28 @@
             <h2 class="formulario__titulo">Ingrese Datos Cliente</h2>
             <form action="" id="formulario">
                 <label for="" class="formulario__label">Nombre</label>
-                <input type="text" class="formulario__input" id="nombre__cliente" autocomplete="off">
+                <input type="text" class="formulario__input" id="nombreCliente" autocomplete="off">
                 <label for="" class="formulario__label">Apellido</label>
-                <input type="text" class="formulario__input" id="apellido__cliente" autocomplete="off">
+                <input type="text" class="formulario__input" id="apellidoCliente" autocomplete="off">
                 <label for="" class="formulario__label">Dni</label>
-                <input type="text" class="formulario__input" id="dni__cliente" autocomplete="off">
+                <input type="text" class="formulario__input" id="dniCliente" autocomplete="off">
                 <label for="" class="formulario__label">Direccion</label>
-                <input type="text" class="formulario__input" id="direccion__cliente" autocomplete="off">
+                <input type="text" class="formulario__input" id="direccionCliente" autocomplete="off">
                 <label for="numero">Fecha Ingreso</label>
-                <input type="date" class="formulario__label" id="ingreso__cliente">
-                <input type="submit" class="btn" id="btn_Agregar">
-
+                <input type="date" class="formulario__label" id="ingresoCliente">
+                <input type="submit" class="btn_1" id="btn_Agregar">
+                <table border="2">
+                    <thead>
+                        <tr class="tablaBusqueda" id="search_mod">
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                        </tr>
+                    </thead>
+                </table>
             </form>
-
-
-
         </div>
-        <button class="usuario color""><a href=" ./index.html">Usuario</a></button>
+        <button class="usuario color"">Usuario</button>
         <button class=" buscar color">Buscar</button>
 
     </main>
